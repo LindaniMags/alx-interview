@@ -46,4 +46,7 @@ for line in sys.stdin:
     except (IndexError, ValueError):
         continue
 
-print_stats()
+
+if __name__ == '__main__':
+    print_stats()
+
