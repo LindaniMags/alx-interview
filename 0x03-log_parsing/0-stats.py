@@ -22,8 +22,8 @@ def input_parser(line):
         'file_size': 0,
     }
 
-    log_fmt = f"{log_pat[0]}\\-{log_pat[1]
-                                }{log_pat[2]}{log_pat[3]}{log_pat[4]}\\s*"
+    log_fmt = '{}\\-{}{}{}{}\\s*'.format(
+        log_pat[0], log_pat[1], log_pat[2], log_pat[3], log_pat[4])
 
     log = re.fullmatch(log_fmt, line)
 
