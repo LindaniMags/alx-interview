@@ -59,9 +59,10 @@ def print_matrics(total_size, stats):
             print(f'{status_code}: {num}', flush=True)
 
 
-def run():
-    '''Starts the log parser.
-    '''
+def print_stats():
+    """
+    prints the current statistics
+    """
     line_count = 0
     total_size = 0
     stats = {
@@ -87,3 +88,7 @@ def run():
                 print_matrics(total_size, stats)
     except (KeyboardInterrupt, EOFError):
         print_matrics(total_size, stats)
+
+
+if __name__ == '__main__':
+    print_stats()
