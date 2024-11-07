@@ -8,7 +8,8 @@ import sys
 
 def place(board, row, col, size):
     """
-    Determines if a queen can be placed on the board at the given row and column.
+    Determines if a queen can be placed on the
+    board at the given row and column.
     """
     for c in range(col):
         if board[c] == row or board[c] - c == row - col or \
